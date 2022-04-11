@@ -100,7 +100,7 @@ function displayWeather(data) {
     var todayList = document.createElement("div");
     todayBox.append(todayList);
 
-    todayList.innerHTML = " " +  selectedCity["name"] + " " + dayjs().format("MM/DD/YYYY h:mm A") + " " + 
+    todayList.innerHTML = "<h2> " +  selectedCity["name"] + " " + dayjs().format("MM/DD/YYYY h:mm A") + "</h2>"+ " " + 
     " <img src='http://openweathermap.org/img/wn/" + 
     selectedCity["current"]["weather"][0]["icon"] + ".png' /></p>" +
     "<p> Temp: " + selectedCity["current"]["temp"] + " F</li>" +
@@ -117,7 +117,7 @@ function displayWeather(data) {
   for (day in daily){
     var weeklyWeather = document.createElement("div")
     forecastBox.append(weeklyWeather);
-    weeklyWeather.innerHTML = dayjs().add(weekDay, "day").format("MM/DD/YYYY h:mm A") + 
+    weeklyWeather.innerHTML = "<h2>" + dayjs().add(weekDay, "day").format("MM/DD/YYYY h:mm A") + "</h2>" + 
     " <img src='http://openweathermap.org/img/wn/" + 
     daily[day]["weather"][0]["icon"] + "@2x.png'></p>" +
     "<p> Temp: " + daily[day]["temp"]["day"] + " F</p>" +
@@ -135,7 +135,7 @@ displaySearchHistory();
     if (searchHistory.length > 0) {
         displayWeather(searchHistory[searchHistory.length - 1]);
     }
-    
+
  // Search button event 
    searchButton.addEventListener("click", function(event){
         event.preventDefault();

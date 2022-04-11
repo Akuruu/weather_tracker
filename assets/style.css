@@ -28,23 +28,18 @@ p {
     font-size: 24px;
 }
 
-.fix {
-
-}
-
 #forecast  {
-    border: dotted rgb(130, 122, 122);
     background-image: linear-gradient(rgb(126, 126, 224), rgb(191, 177, 209));
     color: white;
     align-items: center;
+
 }
 
 #today {
-    border: dotted rgb(145, 139, 139);
     background-image: linear-gradient(rgb(126, 126, 224), rgb(191, 177, 209));
     color: white;
     width: 500px;
     align-items: center;
-    margin-top: 8px;
+    margin-top: 15px;
 }
 
