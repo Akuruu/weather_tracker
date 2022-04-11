@@ -13,3 +13,24 @@ header {
     background-image: linear-gradient(rgb(54, 54, 131), rgb(123, 106, 145));
     padding: 20px; 
 }
+
+form, h2 {
+  text-align: center;
+}
+
+button {
+    padding: 10px;
+    display: inline;
+}
+
+.btn:hover {
+    background-color: rgb(143, 94, 38);
+    color:white;
+}
+
+#forecast {
+    border: solid black;
+    background-image: linear-gradient(rgb(126, 126, 224), rgb(191, 177, 209));
+    color: white;
+    
+}
