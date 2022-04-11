@@ -88,7 +88,7 @@ function retrieveGeo(data){
     
  }
   function retrieveWeather(latLon){
-     weatherApiUrl = "https://api.openweathermap.org/data/2.5/onecall?lat="+latLon[0]+ "&lon=" 
+     let weatherApiUrl = "https://api.openweathermap.org/data/2.5/onecall?lat="+latLon[0]+ "&lon=" 
      + latLon[1]+ `&units=imperial&exclude=hourly&appid=${apiKey}`
      weatherData(weatherApiUrl);
   }  
@@ -119,7 +119,7 @@ function displayWeather(data) {
     forecastBox.append(weeklyWeather);
     weeklyWeather.innerHTML = dayjs().add(weekDay, "day").format("MM/DD/YYYY h:mm A") + 
     " <img src='http://openweathermap.org/img/wn/" + 
-    daily[day]["weather"][0]["icon"] + "@2x.png' /></p>" +
+    daily[day]["weather"][0]["icon"] + "@2x.png'></p>" +
     "<p> Temp: " + daily[day]["temp"]["day"] + " F</p>" +
     "<p> UV Index: " + selectedCity["current"]["uvi"] + "</p>" +
     "<p> Wind: " + daily[day]["wind_speed"] + " MPH</p>" +
@@ -135,8 +135,9 @@ displaySearchHistory();
     if (searchHistory.length > 0) {
         displayWeather(searchHistory[searchHistory.length - 1]);
     }
+    
  // Search button event 
-/*    searchButton.addEventListener("click", function(event){
+   searchButton.addEventListener("click", function(event){
         event.preventDefault();
         if (searchInput.value === "") {
             alert("Enter a city name");
@@ -144,6 +145,5 @@ displaySearchHistory();
         }
     })
     
-*/
 geoData(geoApiUrl);
 weatherData(weatherApiUrl);
