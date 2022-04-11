@@ -23,14 +23,22 @@ button {
     display: inline;
 }
 
-.btn:hover {
-    background-color: rgb(143, 94, 38);
-    color:white;
+p {
+    font-size: 24px;
 }
 
-#forecast {
-    border: solid black;
+#forecast  {
+    border: solid rgb(130, 122, 122);
     background-image: linear-gradient(rgb(126, 126, 224), rgb(191, 177, 209));
     color: white;
-    
+    align-items: center;
 }
+
+#today {
+    border: solid rgb(145, 139, 139);
+    background-image: linear-gradient(rgb(126, 126, 224), rgb(191, 177, 209));
+    color: white;
+    width: 500px;
+    align-items: center;
+}
+
