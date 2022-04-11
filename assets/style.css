@@ -32,14 +32,13 @@ p {
     background-image: linear-gradient(rgb(126, 126, 224), rgb(191, 177, 209));
     color: white;
     align-items: center;
-
 }
 
 #today {
     background-image: linear-gradient(rgb(126, 126, 224), rgb(191, 177, 209));
     color: white;
     width: 500px;
-    align-items: center;
     margin-top: 15px;
+    text-align: center;
 }
 

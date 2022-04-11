@@ -102,7 +102,7 @@ function displayWeather(data) {
 
     todayList.innerHTML = "<h2> " +  selectedCity["name"] + " " + dayjs().format("MM/DD/YYYY h:mm A") + "</h2>"+ " " + 
     " <img src='http://openweathermap.org/img/wn/" + 
-    selectedCity["current"]["weather"][0]["icon"] + ".png' /></p>" +
+    selectedCity["current"]["weather"][0]["icon"] + "@2x.png' /></p>" +
     "<p> Temp: " + selectedCity["current"]["temp"] + " F</li>" +
     "<p> Wind: " + selectedCity["current"]["wind_speed"] + " MPH</p>" +
     "<p> Humidity: " + selectedCity["current"]["humidity"] + " %</p>" +
